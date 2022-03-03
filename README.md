@@ -38,14 +38,14 @@ npx cap sync
 ### configure(...)
 
 ```typescript
-configure(options: ConfigureOptions) => Promise<void>
+configure(options: ConfigureOptions) => any
 ```
 
 | Param         | Type                                                          |
 | ------------- | ------------------------------------------------------------- |
 | **`options`** | <code><a href="#configureoptions">ConfigureOptions</a></code> |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -53,7 +53,7 @@ configure(options: ConfigureOptions) => Promise<void>
 ### preload(...)
 
 ```typescript
-preload(options: PreloadOptions) => Promise<void>
+preload(options: PreloadOptions) => any
 ```
 
 This method will load more optimized audio files for background into memory.
@@ -62,7 +62,7 @@ This method will load more optimized audio files for background into memory.
 | ------------- | --------------------------------------------------------- | -------------------------------------------------------------- |
 | **`options`** | <code><a href="#preloadoptions">PreloadOptions</a></code> | - Options that describes the behaviour of the player and track |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 **Since:** 1.0.0
 
@@ -72,7 +72,7 @@ This method will load more optimized audio files for background into memory.
 ### play(...)
 
 ```typescript
-play(options: PlayOptions) => Promise<void>
+play(options: PlayOptions) => any
 ```
 
 This method will play the loaded audio file if present in the memory.
@@ -81,7 +81,7 @@ This method will play the loaded audio file if present in the memory.
 | ------------- | --------------------------------------------------- | --------------------------------------------------------- |
 | **`options`** | <code><a href="#playoptions">PlayOptions</a></code> | - define assetId to identify asset, set time to add seek. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -89,7 +89,7 @@ This method will play the loaded audio file if present in the memory.
 ### resume(...)
 
 ```typescript
-resume(options: CommonOptions) => Promise<void>
+resume(options: CommonOptions) => any
 ```
 
 This method will resume the loaded audio file if it's currently in pause.
@@ -98,7 +98,7 @@ This method will resume the loaded audio file if it's currently in pause.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -106,7 +106,7 @@ This method will resume the loaded audio file if it's currently in pause.
 ### pause(...)
 
 ```typescript
-pause(options: CommonOptions) => Promise<void>
+pause(options: CommonOptions) => any
 ```
 
 This method will pause the loaded audio file if it's currently playing.
@@ -115,7 +115,7 @@ This method will pause the loaded audio file if it's currently playing.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -123,7 +123,7 @@ This method will pause the loaded audio file if it's currently playing.
 ### loop(...)
 
 ```typescript
-loop(options: CommonOptions) => Promise<void>
+loop(options: CommonOptions) => any
 ```
 
 This method will loop the audio file for playback.
@@ -132,7 +132,7 @@ This method will loop the audio file for playback.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -140,7 +140,7 @@ This method will loop the audio file for playback.
 ### stop(...)
 
 ```typescript
-stop(options: CommonOptions) => Promise<void>
+stop(options: CommonOptions) => any
 ```
 
 This method will stop the audio file if it's currently playing.
@@ -149,7 +149,7 @@ This method will stop the audio file if it's currently playing.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -157,7 +157,7 @@ This method will stop the audio file if it's currently playing.
 ### unload(...)
 
 ```typescript
-unload(options: CommonOptions) => Promise<void>
+unload(options: CommonOptions) => any
 ```
 
 This method will unload the audio file from the memory.
@@ -166,7 +166,7 @@ This method will unload the audio file from the memory.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -174,7 +174,7 @@ This method will unload the audio file from the memory.
 ### setVolume(...)
 
 ```typescript
-setVolume(options: VolumeOptions) => Promise<void>
+setVolume(options: VolumeOptions) => any
 ```
 
 This method will set the new volume for a audio file.
@@ -183,7 +183,7 @@ This method will set the new volume for a audio file.
 | ------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | **`options`** | <code><a href="#volumeoptions">VolumeOptions</a></code> | - define assetId to identify asset, volume to set numerical value of the volume between 0 - 1.0 |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -191,7 +191,7 @@ This method will set the new volume for a audio file.
 ### getVolume(...)
 
 ```typescript
-getVolume(options: CommonOptions) => Promise<{volume: number}>
+getVolume(options: CommonOptions) => any
 ```
 
 This method will get the current volume for a audio file.
@@ -200,7 +200,7 @@ This method will get the current volume for a audio file.
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;{volume: number}&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -208,7 +208,7 @@ This method will get the current volume for a audio file.
 ### getCurrentTime(...)
 
 ```typescript
-getCurrentTime(options: CommonOptions) => Promise<{time: number}>
+getCurrentTime(options: CommonOptions) => any
 ```
 
 this method will get the current time of a playing audio file.
@@ -218,7 +218,7 @@ only works if channels == 1
 | ------------- | ------------------------------------------------------- | ----------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> | - define assetId to identify asset. |
 
-**Returns:** <code>Promise&lt;{time: number}&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -226,7 +226,7 @@ only works if channels == 1
 ### setCurrentTime(...)
 
 ```typescript
-setCurrentTime(options: TimeOptions) => Promise<void>
+setCurrentTime(options: TimeOptions) => any
 ```
 
 This method will set the new current time for a audio file.
@@ -235,7 +235,7 @@ This method will set the new current time for a audio file.
 | ------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | **`options`** | <code><a href="#timeoptions">TimeOptions</a></code> | - define assetId to identify asset, time as numerical value in seconds to set currentTime |
 
-**Returns:** <code>Promise&lt;void&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -243,7 +243,7 @@ This method will set the new current time for a audio file.
 ### getDuration(...)
 
 ```typescript
-getDuration(options: CommonOptions) => Promise<{duration: number}>
+getDuration(options: CommonOptions) => any
 ```
 
 This method will set the new current time for a audio file.
@@ -252,7 +252,7 @@ This method will set the new current time for a audio file.
 | ------------- | ------------------------------------------------------- |
 | **`options`** | <code><a href="#commonoptions">CommonOptions</a></code> |
 
-**Returns:** <code>Promise&lt;{duration: number}&gt;</code>
+**Returns:** <code>any</code>
 
 --------------------
 
@@ -260,7 +260,7 @@ This method will set the new current time for a audio file.
 ### addListener(...)
 
 ```typescript
-addListener(event: string, callback: (info: { status: StatusEvent; position: number; }) => Promise<PluginListenerHandle>) => PluginListenerHandle
+addListener(event: string, callback: (info: { status: StatusEvent; position: number; }) => void) => PluginListenerHandle
 ```
 
 This method will set the new current time for a audio file.
