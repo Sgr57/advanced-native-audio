@@ -336,7 +336,7 @@ extension AudioAsset {
                 return
             }
             
-            if self.statusPlayer != .PAUSED {
+            if self.statusPlayer != .PAUSED, self.statusPlayer != .UNKNOWN {
                 self.sendEventListener(status: .PLAYING)
             }
         }
